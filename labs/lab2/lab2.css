@@ -1,0 +1,30 @@
+body {
+    background-color: #85AFD4;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+   
+}
+button{ 
+    background-color: #E47272;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration-color: white;
+    border-radius: 20px;
+}
+a.bold{
+    font-weight: 700;
+    color: white;
+}
+
+table th, td {
+    border: 2px solid white;
+    padding: 10px;
+}
