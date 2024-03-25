@@ -1,64 +1,70 @@
 .navbar {
-    display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color:#000;
-                padding: 10px 20px;
-              }
+  display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color:#000;
+              padding: 10px 10px;
+            }
+        
+            .nav-link {
+              color: #fff;
+              text-decoration: none;
+              font-size: 20px;
+              margin: 0 10px;
+            }
+        
+            .nav-link:hover {
+              color: #ccc;
+            }
+        
+            .box {
+              width: 250px;
+              height: 50px;
+              background-color: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin: 10px;
+            }
+        
+            .box span {
+              color: #000;
+              font-size: 24px;
+            }
+            
           
-              .nav-link {
-                color: #fff;
-                text-decoration: none;
-                font-size: 18px;
-                margin: 0 10px;
-              }
-          
-              .nav-link:hover {
-                color: #ccc;
-              }
-              .box {
-                width: 200px;
-                height: 50px;
-                background-color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 10px;
-              }
-          
-              .box span {
-                color: #000;
-                font-size: 24px;
-              }
-              .footer {
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                background-color: rgb(0, 0, 0);
-                color: white;
-                text-align: center;
+              body {
+                background-color: rgb(114, 163, 192);
               }
               body {
-                background-color: rgb(56, 127, 155);
-              }
-              body {
-                margin: 0;
+                margin: 12px;
                 padding: 0;
               }
               
               .row {
                 display: flex;
               }
-              
-              .column {
-                flex: 1; /* Set flex property to 1 for equal distribution */
-                padding: 5px;
+              .image-container {
+                display: flex; 
               }
               
-              .photo {
+              .image-container img {
+                width: 24.5%; 
+                height: 280px; 
+                margin: 0 2px;
+              }
+              .footer {
+                left: 0;
+                bottom: 0;
                 width: 100%;
-                height: auto;
+                height: 150px;
+                background-color: rgb(0, 0, 0);
+                color: white;
+                text-align:center;
               }
-              h2 {
-                text-decoration: underline;
-              }
+              
+
+
+
+          
+              
