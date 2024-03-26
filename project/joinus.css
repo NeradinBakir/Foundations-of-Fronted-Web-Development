@@ -121,6 +121,33 @@
                   margin-top: 0;
                 }
               }
+              .footer
+{
+    background-color: black;
+    padding: 50px;
+    grid-area: e;
+    display: flex;
+    color: white;
+    font-family: Andale Mono, monospace;
+    justify-content: space-around;
+}
+
+.followus img
+{
+    background-color: #000;
+    height: 20px;
+    padding: 5px;
+}
+
+.copyright
+{ 
+    background-color: #000;
+    grid-area: f;
+    margin-top: 20px;
+    font-family: Andale Mono, monospace;
+    color: white;
+    font-size: 8pt;
+}
 
 
 
