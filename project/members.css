@@ -33,6 +33,7 @@
               }
               div.gallery {
                 border: 1px solid #ccc;
+                margin-bottom: 20px;
               }
               
               div.gallery:hover {
@@ -42,6 +43,7 @@
               div.gallery img {
                 width: 100%;
                 height: 400px;
+                filter: drop-shadow(15px 10px 15px black);
               }
               
               div.desc {
@@ -78,12 +80,14 @@
                 clear: both;
               }
               
+              
 .footer
 {
     background-color: black;
     padding: 50px;
     grid-area: e;
     display: flex;
+    position: relative;
     color: white;
     font-family: Andale Mono, monospace;
     justify-content: space-around;
@@ -117,3 +121,20 @@
              {
               size: 20px;
              }
+             @media (max-width: 768px) {
+              
+              .menu {
+              
+              display: none;
+              }
+              * {
+                box-sizing: border-box;
+              }
+             
+              
+              }
+             p { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif }
+             ol { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif }
+             h1{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+             h2{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+             h3{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}

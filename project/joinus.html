@@ -5,6 +5,12 @@
     <title>Join us</title>
 
     <link rel="stylesheet" href="joinus.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     
     
         
@@ -16,76 +22,91 @@
               <a class="nav-link" href="joinus.html">Join us</a>
         </div>
         <h2 align="center" >"Join our community! Join us in building a better future. Become our member today!"</h2>
-        <div class="container">
-            <form action="action_page.php">
-              <div class="row">
-                <div class="col-25">
-                  <label for="fname">Full Name</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="fname" name="fullname" placeholder="Full Name">
-                </div>
+        
+        <div class="container text-center text-center">
+          <form class="form-horizontal" role="form">
+          
+              <div class="form-group">
+                  <label for="firstName" class="col-sm-3 control-label">First Name</label>
+                  <div class="col-sm-4">
+                      <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                     
+                  </div>
               </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="Email">Email</label>
-                </div>
-                <div class="col-75">
-                  <input type="text" id="email" name="email" placeholder="email">
-                </div>
+      <div class="form-group">
+                  <label for="lastName" class="col-sm-3 control-label">Last Name</label>
+                  <div class="col-sm-4">
+                      <input type="text" id="firstName" placeholder="Last Name" class="form-control" autofocus>
+                     
+                  </div>
               </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="country">Country</label>
-                </div>
-                <div class="col-75">
-                  <select id="country" name="country">
-                    <option value="Bosnia and Herzegoviny">Bosnia and Hezegovina</option>
-                    <option value="Croatia">Croatia</option>
-                    <option value="Serbia">Serbia</option>
-                  </select>
-                </div>
+      <div class="form-group">
+                  <label for="ID Number" class="col-sm-3 control-label">Adress</label>
+                  <div class="col-sm-4">
+                      <input type="text" id="firstName" placeholder="Adress" class="form-control" autofocus>
+                     
+                  </div>
               </div>
-              <div class="row">
-                <div class="col-25">
-                  <label for="CV">Short CV</label>
-                </div>
-                <div class="col-75">
-                  <textarea id="subject" name="cv" placeholder="Write your short CV..." style="height:200px"></textarea>
-                </div>
+             
+              <div class="form-group">
+                  <label for="password" class="col-sm-3 control-label">Education</label>
+                  <div class="col-sm-4">
+                      <input type="password" id="password" placeholder="Education" class="form-control">
+                  </div>
               </div>
-              <div class="row">
-                <input type="submit" value="Submit">
+                      <div class="form-group">
+                  <label for="Confirm Password" class="col-sm-3 control-label">Skills</label>
+                  <div class="col-sm-4">
+                      <input type="password" id="Confirm Password" placeholder="Skills" class="form-control">
+                  </div>
               </div>
-            </form>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="footer">
-            <div class="footerlogo"><a href="home.html"><img src="logo987.png" alt="STARt" width="200" height="150"></a></div>
-            <div class="location"><strong>Youth Association "STARt" Hadžići</strong><br><br>
-             Igmanski put 35<br>Hadžići, 71240</div>
-            <div class="contactus"><strong>CONTACT US</strong><br><br>+387603150108<br>start.hadzici@gmail.com</div>
-            <div class="followus"><strong>FOLLOW US</strong><br><br>
-                <a href="https://facebook.com/" target="_blank"><img src="facebook.png"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="tiktok.png"></a>
-                <a href="https://www.instagram.com/udruzenje_mladih_start/" target="_blank"><img src="instagram.png"></a>
-                
+             
+              <div class="form-group">
+                  <label for="type" class="col-sm-3 control-label">Country</label>
+                  <div class="col-sm-4">
+                      <select id="Select" class="form-control">
+                          <option>Bosnia and Hercegovina</option>
+                          <option>Serbia</option>
+                          <option>Croatia</option>
+                      </select>
+                  </div>
+              </div> 
+              <div class="form-group">
+                  <label class="control-label col-sm-3">Gender</label>
+                  <div class="col-sm-6">
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <label class="radio-inline">
+                                  <input type="radio" id="femaleRadio" value="Female">Female
+                              </label>
+              <label class="radio-inline">
+                                  <input type="radio" id="maleRadio" value="Male">Male
+                              </label>
+              <label class="radio-inline">
+                                  <input type="radio" id="uncknownRadio" value="Unknown">Others
+                              </label>
+                          </div>
+                         
+                          </div>
+                          
+                              
+                          
+                      </div>
+                  </div>
+           
+      <div class="form-group">
+                  <label for="Address" class="col-sm-3 control-label">Short CV</label>
+                  <div class="col-sm-4">
+                      <textarea class="form-control"></textarea>
+                  </div>
+              </div>
+              <div class="form-group">
+                <div class="col-md-2 col-sm-offset-3">
+                    <a href="submit.html" target="_blank">Submit</a>
+                    </div>
             </div>
-            </div>
+            
+
+        
   </body>   
   </html>

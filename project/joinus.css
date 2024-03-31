@@ -1,153 +1,80 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: aqua;
+}
 .navbar {
-    display: flex;
-                justify-content: space-between;
-                align-items: center;
-                background-color:#000;
-                padding: 10px 10px;
-              }
+display: flex;
+justify-content: space-between;
+align-items: center;
+ background-color:#000;
+ padding: 10px 10px;
+}
           
-              .nav-link {
-                color: #fff;
-                text-decoration: none;
-                font-size: 20px;
-                margin: 0 10px;
-              }
+.nav-link {
+color: #fff;
+text-decoration: none;
+font-size: 20px;
+margin: 0 10px;
+}
           
-              .nav-link:hover {
-                color: #ccc;
-              }
+.nav-link:hover {
+color: #ccc;
+}
           
-              .box {
-                width: 250px;
-                height: 50px;
-                background-color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 10px;
-              }
+.box {
+width: 250px;
+height: 50px;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+}
           
-              .box span {
-                color: #000;
-                font-size: 24px;
-              }
-
-              .footer {
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 150px;
-                background-color: rgb(0, 0, 0);
-                color: white;
-                text-align:center;
-              }
-              .container {
-                position: relative;
-                text-align: center;
-                color: rgba(255, 255, 255, 0.404);
-              }
-              .centered {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-              }
-              .slika {
-                width: 1200px;
-                height: 500px;
-                object-fit: fill;
-                border-radius: 16px;
-              }
-              body {
-                background-color: rgb(114, 163, 192);
-              }
-            
-              input[type=text], select, textarea{
-                width: 70%;
-                padding: 15px;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-                resize: vertical;
-              }
-              
-              
-              label {
-                padding: 12px 12px 12px 0;
-                display: inline-block;
-              }
-              
-              
-              input[type=submit] {
-                background-color: #490dc3;
-                color: white;
-                padding: 12px 20px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-                float: right;
-              }
-              
-              
-              .container {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 20px;
-              }
-              .col-25 {
-                float: left;
-                width: 25%;
-                margin-top: 6px;
-              }
-              
-              
-              .col-75 {
-                float: left;
-                width: 75%;
-                margin-top: 6px;
-              }
-              
-              
-              .row:after {
-                content: "";
-                display: table;
-                clear: both;
-              }
-              
-              
-              @media screen and (max-width: 600px) {
-                .col-25, .col-75, input[type=submit] {
-                  width: 100%;
-                  margin-top: 0;
-                }
-              }
-              .footer
-{
-    background-color: black;
-    padding: 50px;
-    grid-area: e;
-    display: flex;
-    color: white;
-    font-family: Andale Mono, monospace;
-    justify-content: space-around;
+.box span {
+color: #000;
+font-size: 24px;
 }
 
-.followus img
-{
-    background-color: #000;
-    height: 20px;
-    padding: 5px;
+ @media screen and (max-width: 750px) {
+.col-25, .col-75, input[type=submit] {
+width: 100%;
+ margin-top: 0;
 }
-
-.copyright
-{ 
-    background-color: #000;
-    grid-area: f;
-    margin-top: 20px;
-    font-family: Andale Mono, monospace;
-    color: white;
-    font-size: 8pt;
+.button{
+    background-color: aqua;
+    color: #fff;
 }
 
 
 
+
+}
+
+ 
+
+    
+    .followus img
+    {
+        background-color: #000;
+        height: 20px;
+        padding: 5px;
+    }
+    
+    .copyright
+    { 
+        background-color: #000;
+        grid-area: f;
+        margin-top: 20px;
+        font-family: Andale Mono, monospace;
+        color: white;
+        font-size: 8pt;
+    }
+    p { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif }
+    ol { font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif }
+    h1{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    h2{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    h3{font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+
+    
