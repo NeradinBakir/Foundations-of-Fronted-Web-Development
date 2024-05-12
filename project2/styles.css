@@ -39,7 +39,7 @@
 }
 
 #reservationForm button {
-    background-color: #4CAF50;
+    background-color: #208123;
     color: white;
     border: none;
     cursor: pointer;
@@ -51,13 +51,13 @@
 
 #submitBtn.loading {
     pointer-events: none;
-    background-color: #ddd;
+    background-color: #5f3d3d;
 }
 
 #submitBtn.loading::after {
     content: "\f110";
     font-family: FontAwesome;
-    color: white;
+    color: rgb(163, 32, 32);
     position: absolute;
     top: 50%;
     left: 50%;

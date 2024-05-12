@@ -33,7 +33,7 @@ body, html {
   height: auto;
   margin: 10px;
   cursor: pointer;
-  transition: transform 0.8s;
+  transition: transform 4s;
 }
 
 .thumbnails img:hover {
@@ -74,12 +74,12 @@ flex-wrap: wrap;
   height: auto;
   margin: 10px;
   cursor: pointer;
-  transition: transform 1s;
+  transition: transform 2s;
 }
 
 
 .thumbnails img:hover {
-  transform: scale(10); 
+  transform: scale(2); 
 }
 
 
