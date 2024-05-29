@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>Restaurant AS</title>
@@ -7,32 +6,28 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <link rel="stylesheet" href="pr2.css">
-<link rel="stylesheet" href="pr2.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
 </head>
 <body>
-  <input type="checkbox" id="themeSwitch" name="theme-switch" class="theme-switch__input" />
-<label for="themeSwitch" class="theme-switch__label">
-  <span>Switch theme</span>
-</label>
-
-
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block w3-black">HOME</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+  
+  
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+      </div>
     </div>
   </div>
-</div>
+  <button onclick="myFunction()">Toggle dark mode</button>
 
 
 <header class="bgimg w3-display-container w3-grayscale-min" id="home" style="background-image: url('naslovna.jpg')">
@@ -46,17 +41,19 @@
     <span class="w3-tag">Garovci bb, Hadžići</span>
   </div>
 </header>
+<button onclick="myFunction()">Dark mode</button>
 
 
-
-<div class="w3-sand  w3-large">
+<div class="w3-large">
 
 
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE RESTAURANT AS</span></h5>
-    <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <p>The "AS" Restaurant is located in the picturesque Hadžići, in the beautiful mountainous area. As part of the AS hotel, it will charm you with its unique interior that celebrates the richness of Bosnian style. Here, you can enjoy authentic homemade cuisine, highlighting the best of traditional Bosnian recipes, but you can also explore modern cuisine with international influences. Choose between classic Bosnian dishes or indulge in new flavors and culinary innovations.</p>
+<button id="load-more-btn" style="background-color: black; color: white;" onclick="toggleText()">Load More</button>
+<p id="additional-info" style="display: none;">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>"I mostly cook Bosnian cuisine because the restaurant where I work primarily focuses on it, and when it comes to cooking, I like to say that it's such a broad concept that it would take us an eternity to explore it."</i></p>
       <p> Sedad Delilovic - The head chef and one of the best chefs in Bosnia and Herzegovina</p>
@@ -64,7 +61,8 @@
     <img src="sedad_chef.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
   
     <p><strong>Opening hours:</strong> everyday from 7am to 23pm.</p>
-    <p><button onclick="myFunction()">Show adress</button></p>
+    <p><button class="w3-button" style="background-color: black; color: white;" onclick="Fuunction()">Show Address</button></p>
+
     <div id="myDIV">Adress:</div>
   </div>
 </div>
@@ -128,6 +126,9 @@
         <img class="modal-content" id="modalImg">
       </div>
       
+      
+      </div>
+      
       </div>
     </div>
   
@@ -138,7 +139,15 @@
     <p>You can find us on the main road M17, Sarajevo-Mostar, at the entrance to Hadžići, in the suburban settlement of Garovci.</p>
     <img src="as.jpg" class="w3-image" style="width:100%">
     <p><span class="w3-tag"></span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    
+                </div>
+                <button id="writeButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#writeReviewModal">
+                  Write Review
+                </button>
+                <button id="deleteButton" class="btn btn-secondary">
+                  Delete
+                </button>
+                <div id="jsonheading" class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE RESTAURANT AS</span></div>
+                    
     <button class="accordion"><strong>Reservation!</strong></button>
     <div class="panel">
       <p> If you wish to reserve a table, enjoy the delightful ambiance, and savor delicious food, you can do so with just one <a href="reservation_form.html">click.</a> </p>
@@ -150,11 +159,40 @@
       <p>Restaurant AS Garovci: <strong> 063 234 537 </strong></p>
       <p>Bakery AS Hadžići: <strong> 061 244 298 </strong></p>
     </div>
+  
+</div>
+<div class="modal fade" id="writeReviewModal" tabindex="-1" aria-labelledby="writeReviewModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="writeReviewModalLabel">Write a Review</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="reviewerName" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="reviewerName" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="reviewText" class="form-label">Your Review</label>
+            <textarea class="form-control" id="reviewText" rows="3" placeholder="Write your review here"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="saveChangesButton" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="pr2.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"  ></script>
 
 </body>
 </html>
