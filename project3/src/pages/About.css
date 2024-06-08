@@ -1,0 +1,39 @@
+/* About.css */
+.gallery-card {
+    transition: transform 0.3s;
+  }
+  
+  .gallery-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border: 2px solid #ccc;
+    padding: 10px;
+  }
+  
+  .MuiTypography-body1 {
+    text-align: justify;
+  }
+  
+  .MuiButton-root {
+    background-color: #3b5998;
+    color: #fff;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #1d3059;
+  }
+  
+  .MuiButton-startIcon {
+    margin-right: 8px;
+  }
+  
+  .MuiTypography-body2 {
+    text-align: left;
+    margin-left: 20px;
+  }
+  
